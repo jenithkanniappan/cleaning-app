@@ -61,7 +61,7 @@ const Home = ({ navigation }: Props) => {
   const toggleProfile = () => setProfile(!Profile);
   
   const handleNavigation = (index: number, id: number) => {
-    if (cardData[index].id == 1) {
+    if (cardData[index].id === 1) {
       navigation.navigate('Task');
     } else {
       navigation.navigate('Training');

@@ -78,7 +78,7 @@ export default function Login({ navigation }: Props) {
     setErrors(newErrors);
 
     return (
-      Object.values(newErrors).filter(item => item.length != '').length == 0
+      Object.values(newErrors).filter(item => item.length !== '').length === 0
     );
   };
 
